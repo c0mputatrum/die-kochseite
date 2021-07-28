@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello() {
+            let usernameTextBox = document.getElementById("username");
+            let username = usernameTextBox.value;
+        alert("Hallo " + username)
+        }
+        
+        function showMe() {
+            let showMeCheckbox = document.getElementById("showMe");
+            if (showMeCheckbox.checked) {
+            alert("Erfolg")
+        } else {
+            alert("Bitte zuerst Box auswählen")
+        }}
+    </script>
+
+    <button type="button" onclick="sayHello();">
+        Begrüßung
+    </button>
+    <input type="text" placeholder="Hier Namen eingeben" id="username">
+    
+    
+    <br/>
+    <br/>
+    <br/>
+    <input type="radio" name="sleeptime"> Sommer
+    <br/>
+    <input type="radio" name="sleeptime"> Winter
+    <br/>
+    <input type="radio" name="essen" id="sueß">
+    <label for="sueß">Süß</label>
+    <input type="radio" name="essen" id="herzhaft">
+    <label for="herzhaft">Herzhaft</label>
+
+    <input type="radio" name="eis" id="schoko">
+    <label for="schoko">Schoko</label>
+    <input type="radio" name="eis" id="vanille">
+    <label for="vanille">Vanille</label>
+
+    <br/>
+    <input type="checkbox" id="showMe" onchange="showMe();">
+    <label for="showMe">Bitte klicken</label>
+    
+
+
+    <br/>
+    <input type="checkbox" id="perfect" checked>
+    <label for="perfect">Jetzt kanns weitergehen</label>
+
+</body>
+</html>
